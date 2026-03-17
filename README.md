@@ -31,12 +31,21 @@ The goal of this project is to:
 - Git Bash
 
 ## 📂 Project Structure
+
 DevOps-Setup/
-│ ├── README.md 
-├── Reports/ │ ├──
-Terraform_Installation.md │ ├── AWS_CLI_Installation.md │ └──
-VSCode_Setup.md │ ├── Diagrams/ │ └── terraform_iac.png │ └── Scripts/
-└── example.tf
+│
+├── README.md
+│
+├── Reports/
+│   ├── Terraform_Installation.md
+│   ├── AWS_CLI_Installation.md
+│   └── VSCode_Setup.md
+│
+├── images/
+│   ├── aws_toolkit.png
+│   └── hashicorp_terraform.png
+
+
 
 ### ⚙️ Setup Summary
 
@@ -73,7 +82,7 @@ aws sts get-caller-identity 3. VS Code Configuration
 ![Terraform Setup Screenshot](images/hashicorp_terraform.png)
 
 - AWS Toolkit
-![AWS Toolkit] (images/aws_tookit.png)
+![AWS Toolkit] (images/aws_toolkit.png)
 
 
 ### ⚠️ Challenges & Solutions Issue: Terraform not recognized in Git Bash
