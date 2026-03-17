@@ -79,10 +79,12 @@ aws sts get-caller-identity 3. VS Code Configuration
 ### Installed extensions in vscode:
 
 - HashiCorp Terraform
+
 ![Terraform Setup Screenshot](images/hashicorp_terraform.png)
 
 - AWS Toolkit
-![AWS Toolkit] (images/aws_toolkit.png)
+
+![AWS Toolkit Screenshot] (images/aws_toolkit.png)
 
 
 ### ⚠️ Challenges & Solutions Issue: Terraform not recognized in Git Bash
@@ -92,7 +94,7 @@ aws sts get-caller-identity 3. VS Code Configuration
 **Solution:**
 
 ```bash
-echo 'export PATH=\$PATH:/c/terraform' \>\> \~/.bashrc source \~/.bashrc
+echo 'export PATH=$PATH:/c/terraform' >> ~/.bashrc
 ```
 
 ### 🧠 Key Learnings
