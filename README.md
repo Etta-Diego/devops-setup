@@ -1,4 +1,4 @@
-🚀 DevOps Environment Setup -- Terraform & AWS
+## 🚀 DevOps Environment Setup -- Terraform & AWS
 
 This repository documents my Day 1 progress in setting up a complete
 DevOps environment for learning Infrastructure as Code (IaC) using
@@ -7,67 +7,86 @@ Terraform and AWS.
 It includes installation reports, configuration steps, and supporting
 diagrams to provide a clear, reproducible setup process.
 
-📌 Overview
+### 📌 Overview
 
 The goal of this project is to:
 
-Set up Terraform locally
+- Set up Terraform locally
 
-Install and configure AWS CLI
+- Install and configure AWS CLI
 
-Prepare a development environment using VS Code
+- Prepare a development environment using VS Code
 
-Understand the basics of Infrastructure as Code (IaC)
+- Understand the basics of Infrastructure as Code (IaC)
 
-🛠️ Tools & Technologies
 
-Terraform
+### 🛠️ Tools & Technologies
 
-Amazon Web Services (AWS CLI)
+- Terraform
 
-Visual Studio Code
+- Amazon Web Services (AWS CLI)
 
-Git Bash
+- Visual Studio Code
 
-📂 Project Structure DevOps-Setup/ │ ├── README.md ├── Reports/ │ ├──
+- Git Bash
+
+## 📂 Project Structure
+DevOps-Setup/
+│ ├── README.md 
+├── Reports/ │ ├──
 Terraform_Installation.md │ ├── AWS_CLI_Installation.md │ └──
 VSCode_Setup.md │ ├── Diagrams/ │ └── terraform_iac.png │ └── Scripts/
-└── example.tf ⚙️ Setup Summary 1. Terraform Installation
+└── example.tf
 
-Downloaded Terraform (Windows AMD64)
+### ⚙️ Setup Summary
 
-Extracted and stored in C:`\terraform`{=tex}
+1. Terraform Installation
 
-Added to system PATH
+- Downloaded Terraform (Windows AMD64)
 
-Resolved Git Bash PATH issue via .bashrc
+- Extracted and stored in C:`\terraform`{=tex}
+
+- Added to system PATH
+
+- Resolved Git Bash PATH issue via .bashrc
+
 
 2.  AWS CLI Setup
 
-Installed using MSI installer
+- Installed using MSI installer
 
-Verified with:
+- Verified with:
 
+```bash
 aws --version
+```
 
-Configured credentials and verified using:
+- Configured credentials and verified using:
 
+```bash
 aws sts get-caller-identity 3. VS Code Configuration
+```
 
-Installed extensions:
+### Installed extensions in vscode:
 
-HashiCorp Terraform
+- HashiCorp Terraform
+![Terraform Setup Screenshot](images/hashicorp_terraform.png)
 
-AWS Toolkit
+- AWS Toolkit
+![AWS Toolkit] (images/aws_tookit.png)
 
-⚠️ Challenges & Solutions Issue: Terraform not recognized in Git Bash
 
-Cause: Git Bash not inheriting Windows PATH
+### ⚠️ Challenges & Solutions Issue: Terraform not recognized in Git Bash
 
-Solution:
+**Cause:** Git Bash not inheriting Windows PATH
 
+**Solution:**
+
+```bash
 echo 'export PATH=\$PATH:/c/terraform' \>\> \~/.bashrc source \~/.bashrc
-🧠 Key Learnings
+```
+
+### 🧠 Key Learnings
 
 Understanding how Infrastructure as Code (IaC) works
 
@@ -77,27 +96,20 @@ Differences between Windows shell and Git Bash
 
 Setting up a reproducible DevOps workflow
 
-📊 Diagram
 
-🚀 Next Steps
 
-Write first Terraform configuration (.tf file)
-
-Deploy an AWS resource (e.g., EC2 instance)
-
-Explore Terraform commands:
-
-terraform init terraform plan terraform apply 🤝 Acknowledgment
+### 🤝 Acknowledgment
 
 This work is part of the 30-Day Terraform Challenge, learning alongside:
 
-AWS AI/ML UserGroup Kenya
+- AWS AI/ML UserGroup Kenya
 
-Meru HashiCorp User Group
+- Meru HashiCorp User Group
 
-EveOps Community
+- EveOps Community
 
-📬 Connect
+
+### 📬 Connect
 
 Feel free to follow my journey and connect with me as I continue
 learning and building in DevOps and Cloud Engineering.
